@@ -20,28 +20,32 @@ const onBoardForm = (props) => {
             <form className='form-container' onSubmit={onSubmit}>
                 <label>Username:
                     <input
+        
                     value={values.username}
                     onChange={onChange}
                     name='username'
                     type='text'
                      />
                 </label>
+                
                 <label>Email: 
                     <input 
                     name="email" 
-                    type="email" 
+                    type="text" 
                     value={values.email}
                     onChange={onChange}
                     />
                     </label>
+
                 <label>Password:
                 <input
                     value={values.password}
                     onChange={onChange}
                     name='password'
-                    type='password'
+                    type='text'
                      />
                 </label>
+
                 <label>
                 <input id='checkbox' type='checkbox' name='termsOfService' onChange={onChange} />
                  Terms of Service
